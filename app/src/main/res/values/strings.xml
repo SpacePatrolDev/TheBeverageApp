@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Beverage Cost Calculator</string>
+    <string name="size_prompt">Choose a size</string>
+    <string-array name="size_arrays">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+</resources>

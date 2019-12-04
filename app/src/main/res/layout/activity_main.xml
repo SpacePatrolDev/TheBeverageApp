@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/the_beverage_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Beverage"
+        android:textColor="@color/McLaren"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:hint="Enter your Name"
+        android:layout_margin="5dp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/province_autocomplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="15dp"
+        android:hint="Enter your Province"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Beverage:"
+        android:layout_margin="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/beverage_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <RadioButton
+            android:id="@+id/tea_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tea"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/coffee_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffee"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Add-Ons:"
+        android:layout_margin="10dp"/>
+
+    <CheckBox
+        android:id="@+id/milk_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Milk"
+        android:layout_margin="5dp"/>
+
+    <CheckBox
+        android:id="@+id/sugar_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sugar"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Cup Size:"
+        android:layout_margin="10dp"/>
+
+    <Spinner
+        android:id="@+id/size_dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/size_arrays"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Added Flavorings:"
+        android:layout_margin="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/flavoring_tea_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <RadioButton
+            android:id="@+id/none_tea_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/lemon_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lemon"/>
+
+        <RadioButton
+            android:id="@+id/mint_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mint"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/flavoring_coffee_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/none_coffee_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/vanilla_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vanilla"/>
+
+        <RadioButton
+            android:id="@+id/chocolate_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calc_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:background="@color/McLaren"
+        android:textColor="@color/pureWhite"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>
